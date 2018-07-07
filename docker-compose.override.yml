@@ -1,0 +1,11 @@
+version: '2.1'
+
+services:
+
+  php:
+    env_file:
+      - .env.debug
+
+  mysql:
+    environment: 
+      - MYSQL_DABATASE=app_debug
